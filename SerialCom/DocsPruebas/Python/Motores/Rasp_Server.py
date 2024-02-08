@@ -22,7 +22,7 @@ def send_command_to_arduino(command):
     print(response)
 
 def handle_motor_movement(device_id, motor_value):
-    command = f"{device_id},{motor_value}"  # Format the command
+    command = f"{device_id},{motor_value};"  # Format the command
     print(f"Sending to Arduino in a separate thread: {command}")
     send_command_to_arduino(command)
 
